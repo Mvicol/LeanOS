@@ -1,0 +1,7 @@
+# /etc/inittab
+::sysinit:/bin/mount -a
+::sysinit:/sbin/modprobe -a
+::sysinit:/etc/init.d/rcS
+::respawn:/bin/login
+::shutdown:/sbin/halt
+
